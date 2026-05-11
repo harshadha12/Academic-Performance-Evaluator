@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "Building Academic Performance Evaluator Project"
+  displayName: 'Build Project'
+
+- script: echo "Running Test Cases"
+  displayName: 'Run Tests'
+
+- script: echo "Deploying Application"
+  displayName: 'Deploy Application'
